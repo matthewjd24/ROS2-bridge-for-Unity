@@ -27,8 +27,7 @@ class TCPServer(Node):
         self.subscribers = []
         self.tcp_client = None
         self.get_logger().info('TCP server initialized.')
-        self.bridge = CvBridge()
-        self.no_msg_count = 0;
+        self.no_msg_count = 0
         
         # Topics we subscribe to will automatically be relayed to unity
         self.add_subscription('my_ros2_topic', String)
